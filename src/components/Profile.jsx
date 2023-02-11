@@ -36,9 +36,6 @@ const Profile = (e) => {
 										</div>
 									</div>
 								</div>
-								<div className="TabinnProfile">
-									
-								</div>
 
 							</div>
 							<div className="col-4 mx-auto border_div">
