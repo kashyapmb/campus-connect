@@ -6,6 +6,11 @@ import Tab from "./../../node_modules/@mui/material/Tab"
 import TabContext from "./../../node_modules/@mui/lab/TabContext"
 import TabList from "./../../node_modules/@mui/lab/TabList"
 import TabPanel from "./../../node_modules/@mui/lab/TabPanel"
+import ProfilePost from "./ProfilePost"
+import ProfileFollowing from "./ProfileFollowing"
+import ProfileFollowers from "./ProfileFollowers"
+import ProfileQuestions from "./ProfileQuestions"
+import ProfileAnswers from "./ProfileAnswers"
 
 const Profile = (e) => {
 	const [value, setValue] = React.useState("1")
@@ -36,7 +41,37 @@ const Profile = (e) => {
 										</div>
 									</div>
 								</div>
-
+								<Box sx={{ width: "100%", typography: "body1" }}>
+									<TabContext value={value}>
+										<Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+											<TabList
+												onChange={handleChange}
+												aria-label="lab API tabs example"
+											>
+												<Tab label="Post" value="1" />
+												<Tab label="Following" value="2" />
+												<Tab label="Followers" value="3" />
+												<Tab label="Questions" value="4" />
+												<Tab label="Answers" value="5" />
+											</TabList>
+										</Box>
+										<TabPanel value="1">
+											<ProfilePost />
+										</TabPanel>
+										<TabPanel value="2">
+											<ProfileFollowing />
+										</TabPanel>
+										<TabPanel value="3">
+											<ProfileFollowers />
+										</TabPanel>
+										<TabPanel value="4">
+											<ProfileQuestions />
+										</TabPanel>
+										<TabPanel value="5">
+											<ProfileAnswers />
+										</TabPanel>
+									</TabContext>
+								</Box>
 							</div>
 							<div className="col-4 mx-auto border_div">
 								<h1>Profile Page</h1>
