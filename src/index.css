@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Mulish&family=Rokkitt:wght@300&display=swap');
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish';
+  background-color: #ffffffdd;
+}
+
+.nav_bg, .container-fluid, .navbar-brand {
+  background-color: white;
+}
+.navbar_links, .nav-item, .nav-link {
+  background-color: white;
+}
+
+.nav-link:hover{
+  color: #1a4f11;
+}
+
+.navbar-brand{
+  font-size: 1.9rem ;
+  color: #02ac56 ;
+}
+
+.ul_block li{
+  margin: 8px;
+}
+
+.menu_active{
+  border-bottom: 1px solid #02ac56 ;
+  color: #02ac56 !important;
+}
+
+@media (max-width: 991px) {
+  .menu_active{
+    border-bottom: none;
+  }
+  
+}
+
+/* ------------------------------------ */
+
+.coffee_img{
+  width: 25px;
+  height: 25px;
+}
+
+
+/* -------------- */
+
+#header{
+  width: 100%;
+  height: 65vh;
+  margin-top: 50px;
+}
+
+#header h2{
+  margin: 0 0 10px 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+#header .brand-name{
+  color: #02ac56;
+}
+
+#header h4{
+  color: black;
+  font-size: 20px;
+}
+
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #02ac56;
+  border: 2px solid #02ac56;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover{
+  background-color: #02ac56;
+  color: white;
+}
+
+.header-img{
+  text-align: right;
+}
+
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down{
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+
+
+.card_size{
+  width: 300px;
+  height: 160px;
+}
+
+.card div,p,h4{
+  background-color: transparent;
+}
+
+.card_hover:hover{
+  background-color: #e4e8e6;
+  transition: 1s;
+}
+
+/* --------------------------------------------- */
+
+input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+
+
+/* ---------- Profile Section ----------------------- */
+
+.profile .border_div{
+  border: 2px solid black;  
+}
+
+
+.profileImg{
+  width: 200px;
+  height: 200px;
+
+}
+
+.profile_tab{
+  color: #02ac56 !important;
+  background: #000 !important;
+  background-color: #000 !important;
+}
