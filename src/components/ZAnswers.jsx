@@ -8,13 +8,13 @@ const ZAnswers = (props) => {
 		<>
 			<div className="container border_div">
 				<div className="row align-items-center pt-2 pe-2">
-					<div className="col-1">
+					<div className="col-auto">
 						<img
 							src={PIC}
 							style={{ width: 40, height: 40, borderRadius: 50 }}
 						/>
 					</div>
-					<div className="col-4 ms-3">
+					<div className="col-4">
 						<div className="row">{props.name}</div>
 						<div className="row">{props.date}</div>
 					</div>

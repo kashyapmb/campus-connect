@@ -2,35 +2,35 @@
 const ProfileQuestionsData = [
 	{
         question: "Moksh Patel",
-		answer: [{bcjdwcbcbwcjb},{cbccbcwkknwcw}, {cbccbcwkknwcw}, {bcbewjkcbjb}, {cbeuievbeeceefe}],
+		answer: ["eebfb", "wdejdbed", "deidned", "dneidne"]
 	},
 	{
         question: "CampusConnect",
-		answer: [{bcjdwcbcbwcjb},{cbccbcwkknwcw},{cbccbcwkknwcw}, {cbccbcwkknwcw}, {bcbewjkcbjb}, {cbeuievbeeceefe}],
+		answer: ["eebfb", "wdejdbed", "deidned", "dneidne"]
 	},
 	{
         question: "Kenil Talaviya",
-		answer: [{bcjdwcbcbwcjb},{cbccbcwkknwcw}, {cbccbcwkknwcw}, {bcbewjkcbjb}, {cbeuievbeeceefe}],
+		answer: ["eebfb", "wdejdbed", "deidned", "dneidne"]
 	},
 	{
         question: "Kesar Bavadiya",
-		answer: [{bcjdwcbcbwcjb}, {cbccbcwkknwcw}, {bcbewjkcbjb}, {cbeuievbeeceefe}],
+		answer: ["eebfb", "wdejdbed", "deidned", "dneidne"]
 	},
 	{
         question: "Situ Bavadiya",
-		answer: [{bcjdwcbcbwcjb}, {cbccbcwkknwcw}, {bcbewjkcbjb}, {cbeuievbeeceefe}],
+		answer: ["eebfb", "wdejdbed", "deidned", "dneidne"]
 	},
 	{
         question: "Situ Bavadiya",
-		answer: [{bcjdwcbcbwcjb}, {cbccbcwkknwcw}, {bcbewjkcbjb}, {cbeuievbeeceefe}],
+		answer: ["eebfb", "wdejdbed", "deidned", "dneidne"]
 	},
 	{
         question: "Situ Bavadiya",
-		answer: [{bcjdwcbcbwcjb}, {cbccbcwkknwcw}, {bcbewjkcbjb}, {cbeuievbeeceefe}],
+		answer: ["eebfb", "wdejdbed", "deidned", "dneidne"]
 	},
 	{
         question: "Situ Bavadiya",
-		answer: [{bcjdwcbcbwcjb}, {cbccbcwkknwcw}, {bcbewjkcbjb}, {cbeuievbeeceefe}],
+		answer: ["eebfb", "wdejdbed", "deidned", "dneidne"]
 	},
 ]
 

@@ -1,18 +1,19 @@
 import React from "react"
-import ProfilePostData from "../userdata/ProfilePostData"
-import Post from "./ZPost"
+import ProfileLikesData from "../userdata/ProfileLikesData"
+import ZLikes from "./ZLikes"
 
-const ProfilePost = () => {
+const ProfileLikes = () => {
 	return (
 		<>
 			<div className="container-fluid">
 				<div className="row">
 					<div className="col mx-auto">
-						{ProfilePostData.map((item, ind) => {
+						{ProfileLikesData.map((item, ind) => {
 							return (
 								<>
-									<Post
+									<ZLikes
 										index={ind}
+                                        dp={item.imgSrc}
 										name="Kashyap Bavadiya"
 										imgSrc={item.imgSrc}
 										title={item.title}
@@ -30,4 +31,4 @@ const ProfilePost = () => {
 	)
 }
 
-export default ProfilePost
+export default ProfileLikes

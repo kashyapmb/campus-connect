@@ -1,43 +1,20 @@
 import React from "react"
 import { useState } from "react"
 import PIC from "../images/Cryst3l.jpg"
-import ProfilePostData from "../userdata/ProfilePostData"
+import ProfileLikesData from "../userdata/ProfileLikesData"
 
-const Post = (props) => {
-	const [like, setLike] = useState(props.like)
-	const [dislike, setDisLike] = useState(props.dislike)
-
-	// const [like, setLike] = useState({
-	// 	like: 0,
-	// })
-
-	const incLike = (e) => {
-		console.log(e)
-	}
-
-	// // setLike(like+1)
-	// setDisLike(dislike+1)
-	// const likePlus = (id) => {
-	// 	ProfilePostData[id].like++
-	//     setLike(ProfilePostData[id].like)
-	// }
-
-	// const dislikePlus = (id) => {
-	// 	ProfilePostData[id].like++
-	//     setDisLike(ProfilePostData[id].like)
-	// }
-
+const ZLikes = (props) => {
 	return (
 		<>
 			<div className="container border_div">
 				<div className="row align-items-center pt-2 pe-2">
-					<div className="col-1">
+					<div className="col-auto">
 						<img
-							src={PIC}
+							src={props.dp}
 							style={{ width: 40, height: 40, borderRadius: 50 }}
 						/>
 					</div>
-					<div className="col-4 ms-3">
+					<div className="col-4">
 						<div className="row">{props.name}</div>
 						<div className="row">{props.date}</div>
 					</div>
@@ -64,11 +41,11 @@ const Post = (props) => {
 				</div>
 				<div className="row mt-2 mb-3">
 					<div className="col-auto">
-						<button className="btn btn-outline-success" onClick={incLike}>
-							<i class="bi bi-hand-thumbs-up-fill"></i> {like}
+						<button className="btn btn-outline-success" >
+							<i class="bi bi-hand-thumbs-up-fill"></i> {props.like}
 						</button>
 						<button className="btn btn-outline-danger ms-2">
-							<i class="bi bi-hand-thumbs-down-fill"></i> {dislike}
+							<i class="bi bi-hand-thumbs-down-fill"></i> {props.dislike}
 						</button>
 					</div>
 				</div>
@@ -77,4 +54,4 @@ const Post = (props) => {
 	)
 }
 
-export default Post
+export default ZLikes
