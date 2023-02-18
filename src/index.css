@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Mulish&family=Rokkitt:wght@300&display=swap');
 
-
-
-
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Mulish';
-  background-color: #1d3b3bdd;
 }
 
 .nav_bg, .container-fluid, .navbar-brand {

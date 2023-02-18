@@ -1,16 +1,20 @@
-import React from "react"
+import React, {useState} from "react"
 import ProfilePic from "../images/Cryst3l.jpg"
 
-import Box from "./../../node_modules/@mui/material/Box"
-import Tab from "./../../node_modules/@mui/material/Tab"
-import TabContext from "./../../node_modules/@mui/lab/TabContext"
-import TabList from "./../../node_modules/@mui/lab/TabList"
-import TabPanel from "./../../node_modules/@mui/lab/TabPanel"
+import Box from "@mui/material/Box"
+import Tab from "@mui/material/Tab"
+import TabContext from "@mui/lab/TabContext"
+import TabList from "@mui/lab/TabList"
+import TabPanel from "@mui/lab/TabPanel"
 import ProfilePost from "./ProfilePost"
 import ProfileFollowing from "./ProfileFollowing"
 import ProfileFollowers from "./ProfileFollowers"
 import ProfileQuestions from "./ProfileQuestions"
 import ProfileAnswers from "./ProfileAnswers"
+
+import ProfileFollowingData from "../userdata/ProfileFollowingData"
+import ProfileFollowersData from "../userdata/ProfileFollowersData"
+
 
 const Profile = (e) => {
 	const [value, setValue] = React.useState("1")
@@ -18,6 +22,10 @@ const Profile = (e) => {
 	const handleChange = (event, newValue) => {
 		setValue(newValue)
 	}
+
+	const [totalFollowing, setTotalFollowing] = useState(ProfileFollowingData.length)
+	const [totalFollowers, setTotalFollowers] = useState(ProfileFollowersData.length)
+
 
 	return (
 		<>
@@ -36,8 +44,8 @@ const Profile = (e) => {
 										<h6>Surat, Gujarat</h6>
 
 										<div className="row">
-											<div className="col-auto">10-Following</div>
-											<div className="col-auto">253-Followers</div>
+											<div className="col-auto">{totalFollowing}-Following</div>
+											<div className="col-auto">{totalFollowers}-Followers</div>
 										</div>
 									</div>
 								</div>
