@@ -10,7 +10,7 @@ import Coffee from "./components/Coffee"
 import Profile from "./components/Profile"
 import Error from "./components/Error"
 import Footer from "./components/Footer"
-import './index.css'
+import "./index.css"
 import { Routes, Route } from "react-router-dom"
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
@@ -26,10 +26,9 @@ function App() {
 				<Route exact path="/competition" element={<Competition />} />
 				<Route exact path="/answer" element={<Answer />} />
 				<Route exact path="/notifications" element={<Notifications />} />
-				<Route exact path="/buymecoffee" element={<Coffee />} />
 				<Route exact path="/profile" element={<Profile />} />
 				<Route path="*" element={<Error />} />
-			</Routes> 
+			</Routes>
 			<Footer />
 		</>
 	)

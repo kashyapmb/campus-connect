@@ -1,6 +1,7 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 import coffeeImg from '../images/coffee-cup.png'
+import logoImg from '../images/Logo.png'
 
 import Tooltip from '@mui/material/Tooltip';
 import Zoom from '@mui/material/Zoom';
@@ -17,11 +18,11 @@ const Navbar = () => {
 		<>
 			<div className="container-fluid nav_bg">
 				<div className="row">
-					<div className="col-10 mx-auto">
+					<div className="col-11 mx-auto">
 						<nav className="navbar navbar-expand-lg navbar-light bg-light">
 							<div className="container-fluid">
 								<NavLink className="navbar-brand" to="/">
-									CampusConnect
+									<img src={logoImg} alt="CampusConnect" className="img-fluid logo_image"/>
 								</NavLink>
 								<button
 									className="navbar-toggler"
@@ -126,19 +127,6 @@ const Navbar = () => {
 										</li>
 									</ul>
 									<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-										<li className="nav-item">
-											<NavLink
-												className={(navData) =>
-													navData.isActive
-														? "nav-link active menu_active"
-														: "nav-link"
-												}
-												to="/buymecoffee"
-											>
-												<img src={coffeeImg} alt="" className="coffee_img" />
-												Buy Me Coffee
-											</NavLink>
-										</li>
 										<li className="nav-item">
 											<NavLink
 												className={(navData) =>

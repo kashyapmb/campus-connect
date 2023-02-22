@@ -1,7 +1,5 @@
 import React from "react"
-import { useState } from "react"
 import PIC from "../images/Cryst3l.jpg"
-import ProfileLikesData from "../userdata/ProfileLikesData"
 
 const ZLikes = (props) => {
 	return (

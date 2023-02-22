@@ -4,14 +4,14 @@ import { NavLink } from "react-router-dom"
 const Footer = () => {
 	return (
 		<>
-			<div class="container mt-5 col-10">
+			<div className="container mt-5">
 				<footer
-					class="text-center text-lg-start"
+					className="text-center text-lg-start"
 					// style="background-color: #db6930;"
 				>
-					<div class="text-center text-white p-3 bg-success">
+					<div className="text-center text-white p-3 footer_bg">
 						© 2023 Copyright:{" "}
-						<NavLink className="text-white bg-success" to="/">
+						<NavLink className="text-white" to="/">
 							campusconnect.com
 						</NavLink>
 					</div>

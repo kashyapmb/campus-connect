@@ -20,7 +20,7 @@
 
 .navbar-brand{
   font-size: 1.9rem ;
-  color: #02ac56 ;
+  color: #007cc7 ;
 }
 
 .ul_block li{
@@ -28,8 +28,8 @@
 }
 
 .menu_active{
-  border-bottom: 1px solid #02ac56 ;
-  color: #02ac56 !important;
+  border-bottom: 1px solid #007cc7 ;
+  color: #007cc7 !important;
 }
 
 @media (max-width: 991px) {
@@ -63,7 +63,7 @@
 }
 
 #header .brand-name{
-  color: #02ac56;
+  color: #007cc7;
 }
 
 #header h4{
@@ -175,4 +175,25 @@ input[type=number]::-webkit-inner-spin-button,
 
 .hover_effect:hover{
   background-color: rgb(220, 219, 219);
+}
+
+
+
+
+
+
+/* Navbar */
+
+
+.logo_image{
+  width: 10rem;
+  height: 5rem;
+}
+
+
+
+/* Footer */
+
+.footer_bg{
+  background-color: #007cc7;
 }
