@@ -1,28 +1,32 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
-import coffeeImg from '../images/coffee-cup.png'
-import logoImg from '../images/Logo.png'
+import coffeeImg from "../images/coffee-cup.png"
+import logoImg from "../images/Logo.png"
 
-import Tooltip from '@mui/material/Tooltip';
-import Zoom from '@mui/material/Zoom';
+import Tooltip from "@mui/material/Tooltip"
+import Zoom from "@mui/material/Zoom"
 
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined';
-import EventOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
-import CompetitionOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
-import AnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlined';
-import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined"
+import FeedOutlinedIcon from "@mui/icons-material/FeedOutlined"
+import EventOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined"
+import CompetitionOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined"
+import AnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined"
+import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined"
 
 const Navbar = () => {
 	return (
 		<>
 			<div className="container-fluid nav_bg">
 				<div className="row">
-					<div className="col-11 mx-auto">
+					<div className="col-12 mx-auto">
 						<nav className="navbar navbar-expand-lg navbar-light bg-light">
 							<div className="container-fluid">
 								<NavLink className="navbar-brand" to="/">
-									<img src={logoImg} alt="CampusConnect" className="img-fluid logo_image"/>
+									<img
+										src={logoImg}
+										alt="CampusConnect"
+										className="img-fluid logo_image"
+									/>
 								</NavLink>
 								<button
 									className="navbar-toggler"
@@ -50,9 +54,9 @@ const Navbar = () => {
 												aria-current="page"
 												to="/"
 											>
-											<Tooltip TransitionComponent={Zoom} title="Home" arrow>
-											<HomeOutlinedIcon className="" />
-											</Tooltip>
+												<Tooltip TransitionComponent={Zoom} title="Home" arrow>
+													<HomeOutlinedIcon className="" />
+												</Tooltip>
 											</NavLink>
 										</li>
 										<li className="nav-item">
@@ -65,7 +69,7 @@ const Navbar = () => {
 												to="/feed"
 											>
 												<Tooltip TransitionComponent={Zoom} title="Feed" arrow>
-												<FeedOutlinedIcon />
+													<FeedOutlinedIcon />
 												</Tooltip>
 											</NavLink>
 										</li>
@@ -79,7 +83,7 @@ const Navbar = () => {
 												to="/event"
 											>
 												<Tooltip TransitionComponent={Zoom} title="Event" arrow>
-												<EventOutlinedIcon />
+													<EventOutlinedIcon />
 												</Tooltip>
 											</NavLink>
 										</li>
@@ -92,8 +96,12 @@ const Navbar = () => {
 												}
 												to="/competition"
 											>
-												<Tooltip TransitionComponent={Zoom} title="Competition" arrow>
-												<CompetitionOutlinedIcon />
+												<Tooltip
+													TransitionComponent={Zoom}
+													title="Competition"
+													arrow
+												>
+													<CompetitionOutlinedIcon />
 												</Tooltip>
 											</NavLink>
 										</li>
@@ -106,8 +114,12 @@ const Navbar = () => {
 												}
 												to="/answer"
 											>
-												<Tooltip TransitionComponent={Zoom} title="Answer" arrow>
-												<AnswerOutlinedIcon />
+												<Tooltip
+													TransitionComponent={Zoom}
+													title="Answer"
+													arrow
+												>
+													<AnswerOutlinedIcon />
 												</Tooltip>
 											</NavLink>
 										</li>
@@ -120,8 +132,12 @@ const Navbar = () => {
 												}
 												to="/notifications"
 											>
-												<Tooltip TransitionComponent={Zoom} title="Notifications" arrow>
-												<NotificationsOutlinedIcon />
+												<Tooltip
+													TransitionComponent={Zoom}
+													title="Notifications"
+													arrow
+												>
+													<NotificationsOutlinedIcon />
 												</Tooltip>
 											</NavLink>
 										</li>

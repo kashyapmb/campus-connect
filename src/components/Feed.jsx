@@ -3,26 +3,26 @@ import ProfileLikesData from "../userdata/ProfileLikesData"
 import Technology from "../userdata/Technology"
 
 const Feed = (props) => {
+	const interest = (e)=>{
+		alert(e.target.innerHTML)
+	}
 	return (
 		<>
-			<div className="container-fluid profile center_div feed_section">
-				<div className="row">
-					<div className="col-1"></div>
+			<div className="container-fluid profile center_div section_bg">
+				<div className="row pt-3">
 					<div class="col-3 ">
 						{Technology.map((obj, ind) => {
 							return (
 								<>
-									<div className="container border_div">
-										<div className="row align-items-center pt-1 pe-1 mb-1">
-											<div className="col-auto">
+									<div className="container feed_sidebar border_div" onClick={interest}>
+										<div className="row my-2">
+											<div className="col-2">
 												<img
 													src={obj.pic}
 													style={{ width: 30, height: 30, borderRadius: 50 }}
 												/>
 											</div>
-											<div className="col-4">
-												<div className="row">{obj.tech}</div>
-											</div>
+											<div className="col-10 d-flex align-items-center">{obj.tech}</div>
 										</div>
 									</div>
 								</>

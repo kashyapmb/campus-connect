@@ -35,8 +35,7 @@ const NotificationsData = [
 		dp: { dpImg },
 		time: "Countdown set",
 		msg: "You have got a answer",
-		answer:
-			"Yes you fefefbuefef efenfiefe fefofnefmef efmeofjeffefeofjefef e fare saying irght my boy",
+		answer: "Yes you fefefbuefef efenfiefe fefofnefmef efmeofjeffefeofjefef e fare saying irght my boy",
 	},
 	{
 		dp: { dpImg },

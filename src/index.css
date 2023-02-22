@@ -197,3 +197,28 @@ input[type=number]::-webkit-inner-spin-button,
 .footer_bg{
   background-color: #007cc7;
 }
+
+/* All Section Common */
+/* 
+.section_bg{
+  background-color: #007cc7;
+} */
+
+/* Feed */
+
+.feed_sidebar{
+  background-color: #007cc7;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.event_input{
+  height: 30px;
+  font-size: 15px;
+}
