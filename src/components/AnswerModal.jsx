@@ -1,9 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import Box from "@mui/material/Box"
 import Modal from "@mui/material/Modal"
 import Button from "@mui/material/Button"
-import Typography from "@mui/material/Typography"
-import { View, TextInput } from 'react-native';
 import PIC from "../images/Cryst3l.jpg"
 
 const style = {
@@ -12,7 +10,7 @@ const style = {
 	left: "50%",
 	transform: "translate(-50%, -50%)",
 	width: 650,
-    height: 400,
+	height: 220,
 	bgcolor: "background.paper",
 	border: "2px solid #000",
 	boxShadow: 24,
@@ -20,9 +18,24 @@ const style = {
 }
 
 const AnswerModal = (props) => {
+	const [ans, setAns] = useState("")
+
 	const [open, setOpen] = React.useState(false)
 	const handleOpen = () => setOpen(true)
-	const handleClose = () => setOpen(false)
+	const handleClose = () => {
+		setOpen(false)
+		setAns("")
+	}
+
+
+	const typing = (event)=>{
+		setAns(event.target.value)
+	}
+
+	const answerSubmited = ()=>{
+		alert(ans)
+		handleClose()
+	}
 
 	return (
 		<div>
@@ -58,7 +71,18 @@ const AnswerModal = (props) => {
 						</div>
 						<div className="row mt-1">
 							<div className="col">
-								<TextInput multiline style={{maxHeight: 80}} />
+								<input
+									type="text"
+									className="inputFieldModal"
+									placeholder="Give Your Opinion"
+									value={ans}
+									onChange={typing}
+								/>
+							</div>
+						</div>
+						<div className="row mt-3">
+							<div className="col">
+								<button className="buttonModal" onClick={answerSubmited}>Give Answer</button>
 							</div>
 						</div>
 					</div>
