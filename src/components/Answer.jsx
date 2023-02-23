@@ -1,11 +1,17 @@
-import React from "react"
-import ProfileLikesData from "../userdata/ProfileLikesData"
+import React, { useState } from "react"
+import QuestionAnswer from "../userdata/QuestionAnswer"
 import Skills from "../userdata/Skills"
+import AnswerModal from "./AnswerModal"
 
 const Answer = (props) => {
 	const college = (e) => {
 		alert(e.target.innerHTML)
 	}
+
+	// const [answerNum, setAnswerNum] = useState(
+	// 	ProfileFollowersData.length
+	// )
+
 	return (
 		<>
 			<div className="container-fluid profile center_div feed_section">
@@ -31,36 +37,34 @@ const Answer = (props) => {
 						</div>
 					</div>
 					<div class="col-7">
-						{ProfileLikesData.map((obj, ind) => {
+						{QuestionAnswer.map((obj, ind) => {
 							return (
 								<>
 									<div className="container border_div pb-3">
 										<div className="row align-items-center pt-2 pe-2">
 											<div className="col-auto">
 												<img
-													src={obj.imgSrc}
+													src={obj.dp}
 													style={{ width: 40, height: 40, borderRadius: 50 }}
 												/>
 											</div>
-											<div className="col-4">
+											<div className="col-8">
 												<div className="row">{obj.name}</div>
-												<div className="row">{obj.date}</div>
+												<div className="row">{obj.college}</div>
 											</div>
 										</div>
 										<div className="container border_div mt-3">
 											<div className="row mt-2">
 												<h6>
-													<strong>{obj.title}</strong>
+													<strong>{obj.question}</strong>
 												</h6>
 											</div>
 											<div className="row">
-												<h6>5 Answers</h6>
+												<h6>{obj.answer.length} ◦Answers</h6>
 											</div>
 											<div className="row mb-3">
 												<div className="col">
-													<button className="give_answer">
-														<i class="bi bi-pencil-square"></i> Answer
-													</button>
+													<AnswerModal question={obj.question}/>
 												</div>
 											</div>
 										</div>
